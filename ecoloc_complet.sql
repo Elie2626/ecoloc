@@ -261,28 +261,3 @@ DELETE FROM utilisateur WHERE id_utilisateur = 5;
 DELETE FROM materiel WHERE id_materiel = 1;
 
 
--- ============================================================
--- 10. RÉCAPITULATIF DES STATUTS (à retenir pour le DS)
--- ============================================================
-
--- statut_compte (utilisateur) :
---   en_attente → l'admin n'a pas encore validé le compte
---   valide      → l'utilisateur peut se connecter
-
--- statut (emprunt) :
---   en_attente → demande faite, pas encore traitée par l'admin
---   accepte    → accepté mais pas encore récupéré (peu utilisé ici)
---   en_cours   → matériel parti chez l'emprunteur
---   refuse     → demande refusée par l'admin
---   termine    → matériel rendu, emprunt clôturé
-
--- etat (materiel) :
---   neuf          → jamais utilisé
---   bon_etat      → légères traces d'utilisation
---   etat_correct  → usé mais fonctionnel
---   abime         → endommagé
-
--- role (utilisateur) :
---   visiteur → peut voir le catalogue, ne peut pas emprunter
---   abonne   → peut emprunter du matériel
---   admin    → gère tout (utilisateurs, matériels, emprunts)
