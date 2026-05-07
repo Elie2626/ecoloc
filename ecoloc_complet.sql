@@ -1,13 +1,4 @@
--- ============================================================
---  ECOLOC — Fichier SQL complet
---  À retenir pour le DS : création des tables, insertions,
---  et toutes les requêtes utilisées dans les DAO
--- ============================================================
 
-
--- ============================================================
--- 1. CRÉATION DE LA BASE DE DONNÉES
--- ============================================================
 
 CREATE DATABASE IF NOT EXISTS ecoloc
     CHARACTER SET utf8mb4       -- supporte les accents, émojis
